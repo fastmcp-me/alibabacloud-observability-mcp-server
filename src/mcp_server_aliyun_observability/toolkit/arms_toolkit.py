@@ -41,7 +41,7 @@ class ArmsToolkit:
                 20, description="page size,max is 100", ge=1, le=100
             ),
             pageNumber: int = Field(1, description="page number,default is 1", ge=1),
-        ) -> list[dict[str, Any]]:
+        ) -> dict[str, Any]:
             """搜索ARMS应用。
 
             ## 功能概述
